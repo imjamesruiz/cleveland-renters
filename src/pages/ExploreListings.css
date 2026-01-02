@@ -1,0 +1,180 @@
+.listings-page {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: var(--light-gray);
+  min-height: calc(100vh - 200px);
+}
+
+.listings-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.listings-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.listings-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--royal-blue);
+  margin-bottom: 1rem;
+}
+
+.listings-subtitle {
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.listing-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.listing-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--light-gray);
+  position: relative;
+}
+
+.listing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.listing-card:hover .listing-image {
+  transform: scale(1.05);
+}
+
+.listing-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+.listing-address {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--royal-blue);
+  margin: 0;
+}
+
+.listing-city {
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.listing-specs {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-top: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.spec {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+}
+
+.spec-icon {
+  font-size: 1.1rem;
+}
+
+.listing-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price-amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--royal-blue);
+}
+
+.price-period {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.listing-availability {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.listing-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.listing-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .listings-page {
+    padding: 2rem 0;
+  }
+
+  .listings-container {
+    padding: 0 1rem;
+  }
+
+  .listings-title {
+    font-size: 2rem;
+  }
+
+  .listings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .listing-actions {
+    flex-direction: column;
+  }
+
+  .listing-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .listings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
