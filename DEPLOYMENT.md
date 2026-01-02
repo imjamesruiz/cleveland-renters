@@ -26,6 +26,7 @@ Make sure these files are in your domain root:
 - `index.html`
 - `.htaccess` (for routing to work)
 - `assets/` folder (contains all CSS, JS, and images)
+- `contact-handler.php` (for contact form email functionality)
 
 ### 4. Verify .htaccess is Working
 
@@ -55,8 +56,22 @@ If you want to host on a subdomain (e.g., `rentals.yourdomain.com`):
 1. Create subdomain in Bluehost cPanel
 2. Upload files to the subdomain's directory instead
 
+## Contact Form Setup
+
+The contact form uses a PHP handler to send emails. After uploading:
+
+1. **Verify `contact-handler.php` is in your domain root** (same directory as `index.html`)
+2. **Check file permissions**: The PHP file should have 644 permissions
+3. **Test the form**: Submit a test message to ensure emails are sent to `clevelandrenter@gmail.com`
+4. **If emails don't send**: 
+   - Check Bluehost email settings
+   - Verify PHP mail() function is enabled
+   - Check spam folder for test emails
+   - Consider using Bluehost's email service or SMTP configuration
+
 ## Notes
 
 - Bluehost shared hosting works well for static React apps
-- No server-side code needed - this is a pure frontend app
+- The contact form requires PHP support (included with Bluehost)
 - The `.htaccess` file handles all routing automatically
+- Contact form emails are sent to: **clevelandrenter@gmail.com**
