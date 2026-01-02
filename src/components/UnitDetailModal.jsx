@@ -58,7 +58,7 @@ function UnitDetailModal({ listing, onClose }) {
           <div className="image-carousel">
             <img 
               src={listing.images[currentImageIndex]} 
-              alt={`${listing.propertyAddress} ${listing.unitNumber}`}
+              alt={`${listing.propertyAddress}, ${listing.city} ${listing.zipCode} ${listing.unitNumber}`}
               className="carousel-image"
             />
             {listing.images.length > 1 && (
@@ -95,14 +95,14 @@ function UnitDetailModal({ listing, onClose }) {
         {/* Unit Details */}
         <div className="modal-details">
           <h2 className="modal-title">
-            {listing.propertyAddress} {listing.unitNumber}
+            {listing.propertyAddress}, {listing.city} {listing.zipCode}
           </h2>
-          <p className="modal-location">{listing.city}</p>
+          <p className="modal-unit">{listing.unitNumber !== "N/A" ? listing.unitNumber : ""}</p>
 
           <div className="specs-grid">
             <div className="spec-item">
               <span className="spec-label">Bedrooms</span>
-              <span className="spec-value">{listing.bedrooms}</span>
+              <span className="spec-value">{listing.hasDen ? `${listing.bedrooms} + Den` : listing.bedrooms}</span>
             </div>
             <div className="spec-item">
               <span className="spec-label">Bathrooms</span>

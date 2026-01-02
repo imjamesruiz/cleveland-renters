@@ -83,10 +83,11 @@
   margin: 0;
 }
 
-.listing-city {
+.listing-unit {
   color: var(--gray);
   font-size: 0.95rem;
   margin: 0;
+  font-weight: 500;
 }
 
 .listing-specs {

@@ -1,15 +1,17 @@
-// Sample listing data - 15 unique units
+// Apartment listings data - grouped by property address
 export const listings = [
+  // 9414 Clifton - 4 units
   {
     id: 1,
-    propertyAddress: "1234 Euclid Avenue",
-    unitNumber: "Apt 2B",
+    propertyAddress: "9414 Clifton",
+    unitNumber: "Unit 1",
     city: "Cleveland",
-    bedrooms: 2,
+    zipCode: "44102",
+    bedrooms: 3,
     bathrooms: 1,
-    squareFeet: 950,
-    rent: 1200,
-    availabilityDate: "2024-03-01",
+    squareFeet: 1400,
+    rent: 1500,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -19,14 +21,16 @@ export const listings = [
   },
   {
     id: 2,
-    propertyAddress: "1234 Euclid Avenue",
-    unitNumber: "Apt 3A",
+    propertyAddress: "9414 Clifton",
+    unitNumber: "Unit 2",
     city: "Cleveland",
+    zipCode: "44102",
     bedrooms: 1,
     bathrooms: 1,
     squareFeet: 750,
-    rent: 950,
-    availabilityDate: "2024-02-15",
+    rent: 1050,
+    availabilityDate: "2026-06-01",
+    hasDen: true,
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -36,14 +40,15 @@ export const listings = [
   },
   {
     id: 3,
-    propertyAddress: "5678 Detroit Avenue",
-    unitNumber: "Unit 4",
-    city: "Lakewood",
-    bedrooms: 3,
-    bathrooms: 2,
-    squareFeet: 1400,
-    rent: 1800,
-    availabilityDate: "2024-03-15",
+    propertyAddress: "9414 Clifton",
+    unitNumber: "Unit 3",
+    city: "Cleveland",
+    zipCode: "44102",
+    bedrooms: 1,
+    bathrooms: 1,
+    squareFeet: 600,
+    rent: 950,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -53,14 +58,15 @@ export const listings = [
   },
   {
     id: 4,
-    propertyAddress: "5678 Detroit Avenue",
-    unitNumber: "Unit 2",
-    city: "Lakewood",
+    propertyAddress: "9414 Clifton",
+    unitNumber: "Unit 4",
+    city: "Cleveland",
+    zipCode: "44102",
     bedrooms: 2,
-    bathrooms: 1.5,
-    squareFeet: 1100,
-    rent: 1450,
-    availabilityDate: "2024-02-20",
+    bathrooms: 1,
+    squareFeet: 700,
+    rent: 1150,
+    availabilityDate: "2027-07-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -68,16 +74,18 @@ export const listings = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
     ]
   },
+  // 16700 Clifton - 3 units
   {
     id: 5,
-    propertyAddress: "9012 Cedar Road",
-    unitNumber: "Apt 1C",
-    city: "Cleveland Heights",
-    bedrooms: 2,
-    bathrooms: 2,
-    squareFeet: 1050,
-    rent: 1350,
-    availabilityDate: "2024-03-10",
+    propertyAddress: "16700 Clifton",
+    unitNumber: "Unit 1",
+    city: "Lakewood",
+    zipCode: "44107",
+    bedrooms: 3,
+    bathrooms: 1,
+    squareFeet: 1629,
+    rent: 1750,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -87,14 +95,15 @@ export const listings = [
   },
   {
     id: 6,
-    propertyAddress: "9012 Cedar Road",
-    unitNumber: "Apt 2A",
-    city: "Cleveland Heights",
-    bedrooms: 1,
+    propertyAddress: "16700 Clifton",
+    unitNumber: "Unit 2",
+    city: "Lakewood",
+    zipCode: "44107",
+    bedrooms: 3,
     bathrooms: 1,
-    squareFeet: 800,
-    rent: 1000,
-    availabilityDate: "2024-02-25",
+    squareFeet: 1613,
+    rent: 1750,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -104,14 +113,15 @@ export const listings = [
   },
   {
     id: 7,
-    propertyAddress: "3456 Lorain Avenue",
-    unitNumber: "N/A",
-    city: "Cleveland",
-    bedrooms: 3,
-    bathrooms: 2.5,
-    squareFeet: 1600,
-    rent: 2000,
-    availabilityDate: "2024-04-01",
+    propertyAddress: "16700 Clifton",
+    unitNumber: "Unit 3",
+    city: "Lakewood",
+    zipCode: "44107",
+    bedrooms: 1,
+    bathrooms: 1,
+    squareFeet: 806,
+    rent: 1000,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -119,16 +129,18 @@ export const listings = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
     ]
   },
+  // 1553 Wagar - 3 units
   {
     id: 8,
-    propertyAddress: "7890 Madison Avenue",
-    unitNumber: "Unit 5",
+    propertyAddress: "1553 Wagar",
+    unitNumber: "Unit 1",
     city: "Lakewood",
+    zipCode: "44107",
     bedrooms: 2,
     bathrooms: 1,
-    squareFeet: 900,
-    rent: 1150,
-    availabilityDate: "2024-03-05",
+    squareFeet: 1144,
+    rent: 1400,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -138,14 +150,15 @@ export const listings = [
   },
   {
     id: 9,
-    propertyAddress: "2345 Superior Avenue",
-    unitNumber: "Apt 3B",
-    city: "Cleveland",
-    bedrooms: 1,
+    propertyAddress: "1553 Wagar",
+    unitNumber: "Unit 2",
+    city: "Lakewood",
+    zipCode: "44107",
+    bedrooms: 2,
     bathrooms: 1,
-    squareFeet: 700,
-    rent: 900,
-    availabilityDate: "2024-02-28",
+    squareFeet: 1144,
+    rent: 1400,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -155,14 +168,15 @@ export const listings = [
   },
   {
     id: 10,
-    propertyAddress: "6789 Mayfield Road",
-    unitNumber: "Unit 1",
-    city: "Cleveland Heights",
-    bedrooms: 2,
-    bathrooms: 2,
-    squareFeet: 1200,
-    rent: 1500,
-    availabilityDate: "2024-03-20",
+    propertyAddress: "1553 Wagar",
+    unitNumber: "Unit 3",
+    city: "Lakewood",
+    zipCode: "44107",
+    bedrooms: 1,
+    bathrooms: 1,
+    squareFeet: 572,
+    rent: 1000,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -170,16 +184,18 @@ export const listings = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
     ]
   },
+  // 2052 wascana - 2 units
   {
     id: 11,
-    propertyAddress: "4567 Carnegie Avenue",
-    unitNumber: "Apt 4C",
-    city: "Cleveland",
+    propertyAddress: "2052 wascana",
+    unitNumber: "Unit 1",
+    city: "Lakewood",
+    zipCode: "44107",
     bedrooms: 2,
-    bathrooms: 1.5,
-    squareFeet: 1000,
-    rent: 1300,
-    availabilityDate: "2024-03-12",
+    bathrooms: 1,
+    squareFeet: 1032,
+    rent: 1450,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -189,48 +205,15 @@ export const listings = [
   },
   {
     id: 12,
-    propertyAddress: "1234 Clifton Boulevard",
-    unitNumber: "Unit 3",
+    propertyAddress: "2052 wascana",
+    unitNumber: "Unit 2",
     city: "Lakewood",
-    bedrooms: 1,
-    bathrooms: 1,
-    squareFeet: 650,
-    rent: 850,
-    availabilityDate: "2024-02-18",
-    zillowLink: "https://www.zillow.com",
-    images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
-    ]
-  },
-  {
-    id: 13,
-    propertyAddress: "8901 Taylor Road",
-    unitNumber: "Apt 2D",
-    city: "Cleveland Heights",
-    bedrooms: 3,
-    bathrooms: 2,
-    squareFeet: 1350,
-    rent: 1700,
-    availabilityDate: "2024-03-25",
-    zillowLink: "https://www.zillow.com",
-    images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
-    ]
-  },
-  {
-    id: 14,
-    propertyAddress: "5678 Warrensville Center Road",
-    unitNumber: "Unit 6",
-    city: "Cleveland Heights",
+    zipCode: "44107",
     bedrooms: 2,
     bathrooms: 1,
-    squareFeet: 950,
-    rent: 1250,
-    availabilityDate: "2024-03-08",
+    squareFeet: 1008,
+    rent: 1450,
+    availabilityDate: "2026-06-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -238,16 +221,37 @@ export const listings = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
     ]
   },
+  // 2162 Maplewood - 1 unit
   {
-    id: 15,
-    propertyAddress: "3456 St. Clair Avenue",
-    unitNumber: "Apt 1A",
-    city: "Cleveland",
-    bedrooms: 1,
-    bathrooms: 1,
-    squareFeet: 720,
-    rent: 920,
-    availabilityDate: "2024-02-22",
+    id: 13,
+    propertyAddress: "2162 Maplewood",
+    unitNumber: "N/A",
+    city: "Cleveland Heights",
+    zipCode: "44118",
+    bedrooms: 3,
+    bathrooms: 1.5,
+    squareFeet: 1470,
+    rent: 2000,
+    availabilityDate: "2027-06-01",
+    zillowLink: "https://www.zillow.com",
+    images: [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+    ]
+  },
+  // 3323 E Fairfax - 1 unit
+  {
+    id: 14,
+    propertyAddress: "3323 E Fairfax",
+    unitNumber: "N/A",
+    city: "Cleveland Heights",
+    zipCode: "44108",
+    bedrooms: 4,
+    bathrooms: 1.5,
+    squareFeet: 1992,
+    rent: 2200,
+    availabilityDate: "2026-01-01",
     zillowLink: "https://www.zillow.com",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
@@ -257,48 +261,54 @@ export const listings = [
   }
 ]
 
-// Property overview data for home page (6 buildings)
+// Property overview data for home page - grouped by address
 export const propertyOverview = [
   {
-    id: 'euclid',
-    address: "1234 Euclid Avenue",
+    id: 'clifton-9414',
+    address: "9414 Clifton Blvd.",
     city: "Cleveland",
-    priceRange: "$950 - $1,200",
-    unitCount: 2
+    zipCode: "44102",
+    priceRange: "$1,000 - $1,475",
+    unitCount: 4
   },
   {
-    id: 'detroit',
-    address: "5678 Detroit Avenue",
+    id: 'clifton-16700',
+    address: "16700 Clifton Blvd.",
     city: "Lakewood",
-    priceRange: "$1,450 - $1,800",
+    zipCode: "44107",
+    priceRange: "$1,000 - $1,750",
+    unitCount: 3
+  },
+  {
+    id: 'wagar',
+    address: "1553 Wagar Avenue",
+    city: "Lakewood",
+    zipCode: "44107",
+    priceRange: "$975 - $1,325",
+    unitCount: 3
+  },
+  {
+    id: 'wascana',
+    address: "2052 Wascana Avenue",
+    city: "Lakewood",
+    zipCode: "44107",
+    priceRange: "$1,200 - $1,498",
     unitCount: 2
   },
   {
-    id: 'cedar',
-    address: "9012 Cedar Road",
+    id: 'maplewood',
+    address: "2162 Maplewood Road",
     city: "Cleveland Heights",
-    priceRange: "$1,000 - $1,350",
-    unitCount: 2
-  },
-  {
-    id: 'lorain',
-    address: "3456 Lorain Avenue",
-    city: "Cleveland",
+    zipCode: "44118",
     priceRange: "$2,000",
     unitCount: 1
   },
   {
-    id: 'madison',
-    address: "7890 Madison Avenue",
-    city: "Lakewood",
-    priceRange: "$1,150",
-    unitCount: 1
-  },
-  {
-    id: 'superior',
-    address: "2345 Superior Avenue",
-    city: "Cleveland",
-    priceRange: "$900",
+    id: 'fairfax',
+    address: "3323 E fairfax Road",
+    city: "Cleveland Heights",
+    zipCode: "44108",
+    priceRange: "$2,250",
     unitCount: 1
   }
 ]

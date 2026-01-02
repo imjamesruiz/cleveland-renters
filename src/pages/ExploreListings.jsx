@@ -32,21 +32,23 @@ function ExploreListings() {
               <div className="listing-image-container">
                 <img 
                   src={listing.images[0]} 
-                  alt={`${listing.propertyAddress} ${listing.unitNumber}`}
+                  alt={`${listing.propertyAddress}, ${listing.city} ${listing.zipCode} ${listing.unitNumber}`}
                   className="listing-image"
                 />
               </div>
 
               <div className="listing-content">
                 <h3 className="listing-address">
-                  {listing.propertyAddress} {listing.unitNumber}
+                  {listing.propertyAddress}, {listing.city} {listing.zipCode}
                 </h3>
-                <p className="listing-city">{listing.city}</p>
+                <p className="listing-unit">{listing.unitNumber !== "N/A" ? listing.unitNumber : ""}</p>
 
                 <div className="listing-specs">
                   <div className="spec">
                     <span className="spec-icon">🛏️</span>
-                    <span>{listing.bedrooms} {listing.bedrooms === 1 ? 'Bed' : 'Beds'}</span>
+                    <span>
+                      {listing.hasDen ? `${listing.bedrooms} + Den` : listing.bedrooms} {listing.bedrooms === 1 && !listing.hasDen ? 'Bed' : 'Beds'}
+                    </span>
                   </div>
                   <div className="spec">
                     <span className="spec-icon">🚿</span>
